@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(0, 0, 0);
+}
+
+h1{
+    color: aliceblue;
+    font-size: 50px;
+}
+
+section{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .persegi-container{
+    position: relative;
+    padding: 20px;
+    background: rgb(9, 9, 58);
+    width: 90%;
+    border-radius: 10px;
+} */
+
+/* Input */
+
+.input{
+    position: relative;
+    margin: 1.5rem 0;
+    margin-bottom: 50px;
+}
+
+input{
+    border: none;
+    outline: none;
+    padding-left: 0.75rem;
+}
+
+.input-text::-webkit-input-placeholder{
+    color: rgba(250, 250, 250, 0.541);
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+}
+
+.input-text:hover + .input-text::-webkit-input-placeholder{
+    color: rgb(236, 236, 236);
+}
+
+.input-text{
+    font-size: 1.75rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.589);
+    transition: all 0.5s;
+    background: rgb(9, 9, 58);
+    color: rgb(245, 245, 245);
+    
+}
+
+.input-text:hover{
+    background: rgba(245, 244, 244, 0);
+}
+
+.input-text + .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(85, 85, 255);
+    transition: 0.5s;
+    filter: drop-shadow(0 0 10px rgb(85, 85, 255));
+}
+  
+.input-text:focus + .border {
+    width: 350px;
+}
+
+button{
+    color: rgb(243, 243, 243);
+    background: rgb(49, 54, 56);
+    border: none;
+    width: 60%;
+    font-size: 20px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+button:hover{
+    color: rgb(209, 209, 209);
+    background: rgb(93, 102, 105);
+}
