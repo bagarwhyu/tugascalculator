@@ -5,9 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APP Luas Keliling</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section id="persegi">
+        <div class="persegi-container">
+            <h1>Persegi</h1>
+            <div class="input">
+                <input type="text" id="panjangPersegi" name="panjangPersegi" placeholder="Panjang Persegi" class="input-text" autocomplete="off">
+                <span class="border"></span>
+            </div>
+            <div class="input">
+                <input type="text" id="lebarPersegi" name="lebarPersegi" placeholder="Lebar Persegi" class="input-text" autocomplete="off">
+                <span class="border"></span>
+            </div>
+            <button onclick="luasPersegi()">Luas Persegi</button>
+            <button onclick="kelilingPersegi()">Keliing Persegi</button>
+        </div>
+    </section>
+    <section id="segitiga">
+        <div class="segitiga-container">
+            <h1>Segitiga</h1>
+            <div class="input">
+                <input type="text" id="alasSegitiga" name="alasSegitiga" placeholder="Alas Segitiga" class="input-text" autocomplete="off">
+                <span class="border"></span>
+            </div>
+            <div class="input">
+                <input type="text" id="tinggiSegitiga" name="tinggiSegitiga" placeholder="Tinggi Segitiga" class="input-text" autocomplete="off">
+                <span class="border"></span>
+            </div>
+            <button onclick="luasSegitiga()">Luas Segitiga</button>
+            <div class="input">
+                <input type="text" id="sisiSegitigaA" name="sisiSegitigaA" placeholder="Sisi A" class="input-text" autocomplete="off">
+                <span class="border"></span>
+            </div>
+            <div class="input">
+                <input type="text" id="sisiSegitigaB" name="sisiSegitigaB" placeholder="Sisis B" class="input-text" autocomplete="off">
+                <span class="border"></span>
+            </div>
+            <div class="input">
+                <input type="text" id="sisiSegitigaC" name="sisiSegitigaC" placeholder="Sisi C" class="input-text" autocomplete="off">
+                <span class="border"></span>
+            </div>
+            <button onclick="kelilingSegitiga()">Keliling Segitiga</button>
+        </div>
+    </section>
+    <section id="lingkaran">
+        <div class="lingkaran-container">
+            <h1>Lingkaran</h1>
+            <div class="input">
+                <input type="text" id="jariJari" name="jariJari" placeholder="Jari-Jari Lingkaran" class="input-text" autocomplete="off">
+                <span class="border"></span>
+            </div>
+            <button onclick="luasLingkaran()">Luas Lingkaran</button>
+            <button onclick="kelilingLingkaran()">Keliling Lingkaran</button>
+        </div>
+    </section>
+    <br><br><br><br><br>
     <script src="script.js"></script>
 </body>
 </html>
